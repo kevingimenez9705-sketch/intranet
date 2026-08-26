@@ -58,6 +58,7 @@ button { font: inherit; }
   height: var(--header-h);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 32px;
   padding: 0 32px;
   border-bottom: 1px solid var(--border);
@@ -83,29 +84,6 @@ button { font: inherit; }
   color: var(--navy-950);
   line-height: 1.35;
   text-transform: uppercase;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex: 1;
-}
-
-.main-nav a {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text-body);
-  padding: 8px 0;
-  border-bottom: 2px solid transparent;
-  white-space: nowrap;
-}
-
-.main-nav a:hover { color: var(--navy-900); }
-
-.main-nav a.is-active {
-  color: var(--navy-900);
-  border-bottom-color: var(--navy-900);
 }
 
 .header-tools {
@@ -766,7 +744,6 @@ button { font: inherit; }
 }
 
 @media (max-width: 900px) {
-  .main-nav { display: none; }
   .search-box { width: 160px; }
   .sidebar { position: static; height: auto; width: 100%; border-right: none; border-bottom: 1px solid var(--border); }
   .app-layout { flex-direction: column; }
