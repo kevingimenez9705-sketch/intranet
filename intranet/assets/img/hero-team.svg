@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="heroArtTitle">
+  <title id="heroArtTitle">Equipo UNO</title>
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbe8f8"/>
+      <stop offset="1" stop-color="#b9d1ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#skyGrad)"/>
+  <circle cx="640" cy="120" r="150" fill="#ffffff" opacity="0.25"/>
+  <circle cx="120" cy="430" r="110" fill="#ffffff" opacity="0.20"/>
+  <rect x="0" y="430" width="800" height="70" fill="#ffffff" opacity="0.35"/>
+  <g>
+    <circle cx="90" cy="250" r="26" fill="#123a5e"/>
+    <path d="M 44 430 C 44 320, 56 280, 90 280 C 124 280, 136 320, 136 430 Z" fill="#123a5e"/>
+  </g>
+  <g>
+    <circle cx="200" cy="225" r="26" fill="#2f5f92"/>
+    <path d="M 154 430 C 154 295, 166 255, 200 255 C 234 255, 246 295, 246 430 Z" fill="#2f5f92"/>
+  </g>
+  <g>
+    <circle cx="310" cy="240" r="26" fill="#3f74ad"/>
+    <path d="M 264 430 C 264 310, 276 270, 310 270 C 344 270, 356 310, 356 430 Z" fill="#3f74ad"/>
+  </g>
+  <g>
+    <circle cx="420" cy="210" r="26" fill="#5c8fc4"/>
+    <path d="M 374 430 C 374 280, 386 240, 420 240 C 454 240, 466 280, 466 430 Z" fill="#5c8fc4"/>
+  </g>
+  <g>
+    <circle cx="530" cy="250" r="26" fill="#8fb3dd"/>
+    <path d="M 484 430 C 484 320, 496 280, 530 280 C 564 280, 576 320, 576 430 Z" fill="#8fb3dd"/>
+  </g>
+  <g>
+    <circle cx="640" cy="230" r="26" fill="#123a5e"/>
+    <path d="M 594 430 C 594 300, 606 260, 640 260 C 674 260, 686 300, 686 430 Z" fill="#123a5e"/>
+  </g>
+  <g>
+    <circle cx="730" cy="260" r="26" fill="#3f74ad"/>
+    <path d="M 684 430 C 684 330, 696 290, 730 290 C 764 290, 776 330, 776 430 Z" fill="#3f74ad"/>
+  </g>
+</svg>
