@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 140" role="img" aria-labelledby="unoLogoTitle">
+  <title id="unoLogoTitle">UNO — Unimos Nuestra Organización</title>
+  <text x="-6" y="112" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-weight="800"
+        font-size="118" letter-spacing="-4" fill="#0b1f3a">UN</text>
+  <circle cx="207" cy="72" r="46" fill="none" stroke="#123a5e" stroke-width="22"/>
+  <circle cx="246" cy="72" r="38" fill="none" stroke="#8fb3dd" stroke-width="18"/>
+</svg>
