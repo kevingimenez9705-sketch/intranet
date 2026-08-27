@@ -40,15 +40,24 @@ button{font-family:inherit;cursor:pointer;}
 /* Layout */
 .layout{display:flex;align-items:flex-start;max-width:1500px;margin:0 auto;}
 .sidebar{
-  width:230px;flex:none;padding:20px 12px;position:sticky;top:65px;
-  height:calc(100vh - 65px);overflow-y:auto;
+  width:68px;flex:none;padding:16px 10px;position:sticky;top:65px;
+  height:calc(100vh - 65px);display:flex;flex-direction:column;align-items:center;gap:6px;
 }
 .sidebar a{
-  display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;
-  font-size:14px;font-weight:600;color:var(--navy-dark);margin-bottom:4px;
+  position:relative;display:flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:10px;font-size:19px;color:var(--navy-dark);
 }
 .sidebar a.active{background:var(--blue-soft);color:var(--navy);}
 .sidebar a:hover:not(.active){background:#f4f8fc;}
+/* Tooltip con el nombre de la sección, para abrir "otro espacio" sin texto fijo */
+.sidebar a::after{
+  content:attr(data-label);
+  position:absolute;left:56px;top:50%;transform:translateY(-50%);
+  background:var(--navy-dark);color:#fff;font-size:12px;font-weight:600;
+  padding:6px 10px;border-radius:8px;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .12s ease;z-index:80;
+}
+.sidebar a:hover::after{opacity:1;}
 
 .content{flex:1;min-width:0;padding:26px 32px 60px;position:relative;}
 .eyebrow{font-size:12px;font-weight:800;letter-spacing:1px;color:var(--navy);margin-bottom:6px;}
@@ -157,12 +166,13 @@ h1.page-title{font-size:30px;margin:6px 0 6px;color:var(--navy-dark);}
 
 .hidden{display:none !important;}
 
-/* Mobile sidebar toggle */
-.menu-toggle{display:none;background:none;border:none;color:var(--navy-dark);padding:4px;}
+/* El sidebar es una barra angosta de íconos, siempre visible: alcanza
+   con achicar el buscador en pantallas chicas, no hace falta ocultarlo. */
 @media (max-width:900px){
-  .menu-toggle{display:block;}
-  .sidebar{position:fixed;left:-260px;top:0;height:100vh;background:var(--card);z-index:60;
-    transition:left .2s;box-shadow:2px 0 12px rgba(0,0,0,.1);padding-top:70px;}
-  .sidebar.open{left:0;}
   .search input{width:120px;}
+}
+@media (max-width:480px){
+  .sidebar{width:56px;}
+  .sidebar a{width:38px;height:38px;font-size:17px;}
+  .search{display:none;}
 }

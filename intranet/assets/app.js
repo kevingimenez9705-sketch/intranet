@@ -158,14 +158,10 @@ function renderContactos(){
   });
 }
 
-// ---------- Comportamiento común (menú móvil + buscador) ----------
+// ---------- Comportamiento común (buscador) ----------
+// El sidebar es una barra fija de íconos (con tooltip vía data-label),
+// así que no necesita lógica de apertura/cierre en ningún tamaño de pantalla.
 function initChrome(){
-  const toggle = document.getElementById('menuToggle');
-  const sidebar = document.getElementById('sidebar');
-  if(toggle && sidebar){
-    toggle.addEventListener('click', () => sidebar.classList.toggle('open'));
-  }
-
   const params = new URLSearchParams(location.search);
   const initialQuery = params.get('q') || '';
 
