@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aniversarios · UNO Intranet</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23163a63%22/></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <a class="brand" href="index.html">
+    <svg class="logo" viewBox="0 0 100 60" fill="none"><path d="M5 5 V35 A25 25 0 0 0 50 35 V5" stroke="#163a63" stroke-width="9" fill="none"/><circle cx="80" cy="30" r="20" fill="#9fc3e8"/></svg>
+    <div class="name">UNIMOS NUESTRA<b>ORGANIZACIÓN</b></div>
+  </a>
+  <nav class="topnav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="comunicados.html">Comunicados</a>
+    <a href="directorio.html">Directorio</a>
+    <a href="ingresos.html">Movimientos</a>
+    <a href="politicas.html">Manual de políticas</a>
+  </nav>
+  <div class="topbar-right">
+    <div class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="searchBox" placeholder="Buscar en UNO...">
+    </div>
+    <div class="bell">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+      <span class="badge">3</span>
+    </div>
+    <div class="avatar-chip"><span class="circle">AG</span> Agustín</div>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html">🏠 Inicio</a>
+    <a href="comunicados.html">📣 Comunicados</a>
+    <a href="directorio.html">🪪 Directorio</a>
+    <a href="ingresos.html">👤➕ Ingresos del mes</a>
+    <a href="egresos.html">👤➖ Egresos del mes</a>
+    <a href="aniversarios.html" class="active">🎖️ Aniversarios</a>
+    <a href="cumpleanos.html">🎂 Cumpleaños</a>
+    <a href="politicas.html">📁 Manual de políticas</a>
+    <a href="contactos.html">☎️ Contactos de emergencia</a>
+  </aside>
+
+  <main class="content">
+    <div class="eyebrow">ANTIGÜEDAD EN LA COMPAÑÍA</div>
+    <h1 class="page-title">ANIVERSARIOS</h1>
+    <p class="page-sub">Compañeros que cumplen años de trayectoria este mes.</p>
+    <div class="card" style="padding:20px;">
+      <div class="anniv-grid" id="annivGrid"></div>
+    </div>
+
+    <div class="page-num">UNO / 06</div>
+  </main>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
