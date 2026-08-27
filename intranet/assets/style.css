@@ -42,6 +42,7 @@ button{font-family:inherit;cursor:pointer;}
 .sidebar{
   width:68px;flex:none;padding:16px 10px;position:sticky;top:65px;
   height:calc(100vh - 65px);display:flex;flex-direction:column;align-items:center;gap:6px;
+  z-index:40; /* por encima de las tarjetas del contenido, para que el tooltip no quede tapado */
 }
 .sidebar a{
   position:relative;display:flex;align-items:center;justify-content:center;
